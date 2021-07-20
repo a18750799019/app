@@ -1,0 +1,447 @@
+{
+  "base": "/protal/",
+  "apiurl":"",
+  "MQTT_SERVICE":"tcp://218.5.2.74",
+  "port":"1884",
+  "MQTT_USERNAME":"",
+  "MQTT_PASSWORD":"",
+  "apkUrl":"http://192.168.1.234:31349/app/app-debug.apk",
+  "relativePath_bak":"http://192.168.1.234:18080/",
+  "apiFileUrl_bak":"http://192.168.1.234:18080/api/static/pdf/",
+  "relativePath":"http://dev.3dspace.top:52341/",
+  "apiFileUrl":"http://dev.3dspace.top:52341/api/static/pdf/",
+  "version":"1.0.0",
+  "sysTitle": "地震辅助决策电子沙盘",
+  "geoFujianUrl":"http://192.168.1.80:20081/geoserver/wms",
+  "geoServerUrl":"http://192.168.1.80:20081/geoserver/fjseism/wms",
+  "geoServerUrl1":"http://192.168.1.80:20081/geoserver/fjseism/wms",
+  "geoServerUrl1_bak":"http://dev.3dspace.top:50802/geoserver/fjseism/wms",
+  "mapSource":{
+    "img_w":"http://t3.tianditu.com/DataServer?T=img_w&x={x}&y={y}&l={z}&tk=7b90b6fb35a30ce0ff9298ec157b6858",
+    "cva_c":"http://t0.tianditu.gov.cn/cva_w/wmts?tk=72db8813d8229a071a0de83aa8c70e69",
+    "vec_w":"http://t4.tianditu.com/DataServer?T=vec_w&x={x}&y={y}&l={z}&tk=7b90b6fb35a30ce0ff9298ec157b6858"
+  },
+  "earthquakeLevelType":[{
+    "min":0,
+    "max":3.9,
+    "color":"#4abde2"
+  },{
+    "min":4,
+    "max":5.9,
+    "color":"#f7c834"
+  },{
+    "min":6,
+    "max":7.9,
+    "color":"#f78839"
+  },{
+    "min":8,
+    "max":200,
+    "color":"#f00"
+  }],
+  "jobsType":[{
+    "text":"应急宣教科/股",
+    "value":"1"
+  },{
+    "text":"信息科/股",
+    "value":"2"
+  }],
+  "sexType":[{
+    "text":"男",
+    "value":"1"
+  },{
+    "text":"女",
+    "value":"2"
+  }],
+  "tabbar":[
+    {
+      "title":"地震",
+      "name":"earthquakeMap",
+      "icon": {
+        "active": "appimgs/home/earthquake-inactive.png",
+        "inactive": "appimgs/home/earthquake-active.png"
+      }
+    },
+    {
+      "title":"辅助决策",
+      "name":"adm",
+      "icon": {
+        "active": "appimgs/home/adm-inactive.png",
+        "inactive": "appimgs/home/adm-active.png"
+      }
+    },{
+      "title":"通讯录",
+      "name":"mailList",
+      "icon": {
+        "active": "appimgs/home/mailList-inactive.png",
+        "inactive": "appimgs/home/mailList-active.png"
+      }
+    },{
+      "title":"个人中心",
+      "name":"personal",
+      "icon": {
+        "active": "appimgs/home/personal-inactive.png",
+        "inactive": "appimgs/home/personal-active.png"
+      }
+    }
+  ],
+  "aidDecision":[{
+    "icon":"appimgs/icon-zqjb.png",
+    "title":"灾情简报"
+  },{
+    "icon":"appimgs/icon-fzjcbg.png",
+    "title":"辅助决策报告"
+  },{
+    "icon":"appimgs/icon-fzsc.png",
+    "title":"防震知识"
+  },{
+    "icon":"appimgs/icon-yjya.png",
+    "title":"地震百科"
+  }],
+  "eaTimeRange":[{
+    "isAction":false,
+    "text":"全部",
+    "params":""
+},{
+      "isAction":true,
+      "text":"最近24小时",
+      "params":"0"
+  },{
+      "isAction":false,
+      "text":"最近一周",
+      "params":"1"
+  },{
+      "isAction":false,
+      "text":"最近一个月",
+      "params":"2"
+  },{
+      "isAction":false,
+      "text":"一个月以上",
+      "params":"3"
+  }],
+  "eyesList":[{
+    "name": "地图",
+    "type":"map",
+    "selected": true,
+    "children":[{
+      "icon":"appimgs/earthquake/img-vector.png",
+      "name":"矢量",
+      "type":"sl"
+    },{
+      "icon":"appimgs/earthquake/img-image.png",
+      "name":"影像",
+      "type":"yx"
+    }]
+  },{
+    "name": "地震与设防",
+    "type":"dzysf",
+    "selected": false,
+    "children":[{
+      "name":"地震台站",
+      "subs":[{
+        "name":"地震台站",
+        "type":"dztz",
+        "select":false
+      },{
+        "name":"GPS台站",
+        "type":"gpstz",
+        "select":false
+      },{
+        "name":"烈度速报台站",
+        "type":"ldsbtz",
+        "select":false
+      },{
+        "name":"强震台站",
+        "type":"qztz",
+        "select":false
+      }]
+    },{
+      "name":"地震烈度",
+      "subs":[{
+        "name":"全国烈度带",
+        "type":"qgldd",
+        "select":false
+      },{
+        "name":"福建省烈度带",
+        "type":"fjsldd",
+        "select":false
+      }]
+    },{
+      "name":"抗震设防",
+      "subs":[{
+        "name":"地表峰值加速度2%",
+        "type":"dbdzdcsz2",
+        "layer":"fjseismgis:dbfzjsd2utf8",
+        "select":false
+      },{
+        "name":"地表峰值加速度10%",
+        "type":"dbdzdcsz10",
+        "layer":"fjseismgis:dbfzjsd10utf8",
+        "select":false
+      },{
+        "name":"地表峰值加速度63%",
+        "type":"dbdzdcsz63",
+        "layer":"fjseismgis:dbfzjsd63utf8",
+        "select":false
+      },{
+        "name":"基岩反算峰值加速度2%",
+        "type":"jydzwxxjsd2",
+        "layer":"fjseismgis:jyfsfzjsd2utf8",
+        "select":false
+      },{
+        "name":"基岩反算峰值加速度10%",
+        "type":"jydzwxxjsd10",
+        "layer":"fjseismgis:jyfsfzjsd10utf8",
+        "select":false
+      },{
+        "name":"基岩反算峰值加速度63%",
+        "type":"jydzwxxjsd63",
+        "layer":"fjseismgis:jyfsfzjsd63utf8",
+        "select":false
+      },{
+        "name":"特征周期2%",
+        "type":"cdlbfcg2",
+        "layer":"fjseismgis:tzzq2utf8",
+        "select":false
+      },{
+        "name":"特征周期10%",
+        "type":"cdlbfcg10",
+        "layer":"fjseismgis:tzzq10utf8",
+        "select":false
+      },{
+        "name":"特征周期63%",
+        "type":"cdlbfcg63",
+        "layer":"fjseismgis:tzzq63utf8",
+        "select":false
+      },{
+        "name":"场地类别",
+        "type":"cdlbd",
+        "layer":"fjseismgis:cdlbutf8",
+        "select":false
+      }]
+    }]
+  },{
+    "name": "生命工程专题",
+    "type":"smgczt",
+    "selected": false
+  },{
+    "name": "灾损",
+    "type":"zs",
+    "selected": false,
+    "children":[{
+      "name":"人员死亡分布",
+      "checked":false,
+      "url":"appimgs/jcfbztt.png"
+    },{
+      "name":"人员受伤分布",
+      "checked":false,
+      "url":"appimgs/jcfbztt.png"
+    },{
+      "name":"房屋倒塌分布",
+      "checked":false,
+      "url":"appimgs/jcfbztt.png"
+    },{
+      "name":"经济损失分布",
+      "checked":false,
+      "url":"appimgs/jcfbztt.png"
+    }]
+  }],
+  "mapCasualtyLossLayer":[{
+    "name":"地震烈度分布",
+    "checked":false,
+    "haNo":"fjseism:ha01_",
+    "url":"appimgs/legend/地震烈度.png"
+  },{
+    "name":"人员死亡分布",
+    "checked":false,
+    "haNo":"fjseism:ha02_",
+    "url":"appimgs/legend/人员死亡分布.png"
+  },{
+    "name":"人员受伤分布",
+    "checked":false,
+    "haNo":"fjseism:ha03_",
+    "url":"appimgs/legend/人员受伤分布.png"
+  },{
+    "name":"房屋倒塌分布",
+    "checked":false,
+    "haNo":"fjseism:ha04_",
+    "url":"appimgs/legend/房屋倒塌分布.png"
+  },{
+    "name":"经济损失分布",
+    "checked":false,
+    "haNo":"fjseism:ha05_",
+    "url":"appimgs/legend/经济损失分布.png"
+  }],
+  "lifeProjSubject":[{
+    "url":"appimgs/jcfbztt.png",
+    "name": "机场分布专题图",
+    "color":"#218EFF",
+    "layer":"fjseism:airport",
+    "select": false
+  },{
+    "url":"appimgs/gjzztt.png",
+    "name": "公交站点专题图",
+    "color":"#F19149",
+    "layer":"fjseismgis:fjsmx_ebusstation",
+    "select": false
+  },{
+    "url":"appimgs/hczztt.png",
+    "name": "火车站专题图",
+    "color":"#097C25",
+    "layer":"fjseismgis:fjsmx_erailwaystation",
+    "select": false
+  },{
+    "url":"appimgs/jyzjqzztt.png",
+    "name": "加油站加气站专题图",
+    "color":"#920783",
+    "layer":"fjseismgis:fjsmx_zjyjqz",
+    "select": false
+  },{
+    "url":"appimgs/hxzpztt.png",
+    "name": "化学制品厂专题图",
+    "color":"#00A0E9",
+    "layer":"fjseismgis:fjsmx_zhxzpc",
+    "select": false
+  },{
+    "url":"appimgs/hgcztt.png",
+    "name": "化工厂专题图",
+    "color":"#00A0E9",
+    "layer":"fjseismgis:fjsmx_zhgc",
+    "select": false
+  },{
+    "url":"appimgs/wxpztt.png",
+    "name": "危险品专题图",
+    "color":"#FFF100",
+    "layer":"fjseismgis:fjsmx_zwxp",
+    "select": false
+  },{
+    "url":"appimgs/fsxyzt.png",
+    "name": "放射性源专题图",
+    "color":"#FFF100",
+    "layer":"fjseismgis:fjsmx_zfsxy",
+    "select": false
+  },{
+    "url":"appimgs/zfjgztt.png",
+    "name": "政府机构专题图",
+    "color":"#218EFF",
+    "layer":"fjseismgis:fjsmx_egovernment",
+    "select": false
+  },{
+    "url":"appimgs/bxgzt.png",
+    "name": "爆相关专题图",
+    "color":"#FF0000",
+    "layer":"fjseismgis:fjsmx_zbz",
+    "select": false
+  },{
+    "url":"appimgs/rqztt.png",
+    "name": "燃气专题图",
+    "color":"#FF0000",
+    "layer":"fjseismgis:fjsmx_zrqz",
+    "select": false
+  },{
+    "url":"appimgs/mqztt.png",
+    "name": "煤气专题图",
+    "color":"#F19149",
+    "layer":"fjseismgis:fjsmx_zmqz",
+    "select": false
+  },{
+    "url":"appimgs/yxgztt.png",
+    "name": "烟相关专题图",
+    "color":"#009944",
+    "layer":"fjseismgis:fjsmx_zyc",
+    "select": false
+  },{
+    "url":"appimgs/zycztt.png",
+    "name": "炸药厂专题图",
+    "color":"#EB6100",
+    "layer":"fjseismgis:fjsmx_zzy",
+    "select": false
+  },{
+    "url":"appimgs/sscdfb.png",
+    "name": "疏散场地分布专题图",
+    "color":"#009944",
+    "layer":"fjseismgis:fjsmx_eshelters",
+    "select": false
+  },{
+    "url":"appimgs/xxfbzt.png",
+    "name": "学校分布专题图",
+    "color":"#00A0E9",
+    "layer":"fjseismgis:fjsmx_eschool",
+    "select": false
+  },{
+    "url":"appimgs/yyfbztt.png",
+    "name": "医院分布专题图",
+    "color":"#E60012",
+    "layer":"fjseismgis:fjsmx_ehospital",
+    "select": false
+  }],
+  "intensityScale":[{
+    "key":"Ⅰ",
+    "text":"Ⅰ(人体无感)",
+    "value":"Ⅰ"
+  },{
+    "key":"Ⅱ",
+    "text":"Ⅱ(个别人人有感)",
+    "value":"Ⅱ"
+  },{
+    "key":"Ⅲ",
+    "text":"Ⅲ(少数人有感，悬挂物轻微摆)",
+    "value":"Ⅲ"
+  },{
+    "key":"Ⅳ",
+    "text":"Ⅳ(室内人多有感，室外人少有感)",
+    "value":"Ⅳ"
+  },{
+    "key":"Ⅴ",
+    "text":"Ⅴ(人惊醒，畜不宁，墙壁裂纹)",
+    "value":"Ⅴ"
+  },{
+    "key":"Ⅵ",
+    "text":"Ⅵ(人惊慌，畜外逃，物掉落、棚舍损坏)",
+    "value":"Ⅵ"
+  },{
+    "key":"Ⅶ",
+    "text":"Ⅶ(房屋轻微损坏，地表裂缝喷水)",
+    "value":"Ⅶ"
+  },{
+    "key":"Ⅷ",
+    "text":"Ⅷ(房屋多有损坏，路基塌，管道破裂)",
+    "value":"Ⅷ"
+  },{
+    "key":"Ⅸ",
+    "text":"Ⅸ(建筑物普遍破坏，少数倾倒，铁轨弯)",
+    "value":"Ⅸ"
+  },{
+    "key":"X",
+    "text":"X(建筑物普遍摧毁，山石崩，水浪扑岸)",
+    "value":"X"
+  },{
+    "key":"Ⅺ",
+    "text":"Ⅺ(房屋大量倒塌，堤岸崩毁，地表大变)",
+    "value":"Ⅺ"
+  },{
+    "key":"Ⅻ",
+    "text":"Ⅻ(山川易景，地形剧变，动植物毁灭)",
+    "value":"Ⅻ"
+  }],
+  "describe1":[{
+    "text":"无人员伤亡",
+    "value":0
+  },{
+    "text":"有人员伤亡",
+    "value":1
+  }],
+  "describe2":[{
+    "text":"无建筑物破坏",
+    "value":0
+  },{
+    "text":"部分建筑物破坏",
+    "value":1
+  }],
+  "magnitude":[
+    { "text": "全部", "value": "" },
+    { "text": "0-3.9", "value": "0-3.9" },
+    { "text": "4-5.9", "value": "4-5.9" },
+    { "text": "6-7.9", "value": "6-7.9" },
+    { "text": "8以上", "value": "8-20" }
+  ]
+ }

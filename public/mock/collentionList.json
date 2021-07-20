@@ -1,0 +1,123 @@
+{
+    "msg": "数据获取成功",
+    "total": 1,
+    "code": 0,
+    "records": 1,
+    "rows": [{
+      "id":"1",
+      "img":"/appimgs/img.png",
+      "earthquakeIntensity":"Ⅰ",
+      "addr":"上报地址闽侯县久策大厦",
+      "time":"2020.02.18 16:26",
+      "seismic": "地震标识福建省莆田市荔城区识福建省莆田市荔城区",
+      "state": "草稿",
+      "height": "8km",
+      "briefOne": "无人员伤亡",
+      "briefTwo": "部分筑物破坏",
+      "describe1":0,
+      "describe2":1,
+      "detailed":"详细描述物品破坏功能",
+      "imgsList": [
+        {"content":"/appimgs/img.png","data":""},
+        {"content":"https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg"},
+        {"content":"https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg"}
+    ],
+      "videoList": [{
+          "img":"https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg",
+          "videoSrc":""
+      },{
+        "img":"/appimgs/img.png",
+        "videoSrc":""
+        }]
+    },{
+        "id":"2",
+        "img":"/appimgs/img.png",
+        "earthquakeIntensity":"Ⅱ",
+        "addr":"上报地址闽侯县久策大厦",
+        "time":"2020.02.18 16:26",
+        "seismic": "地震标识福建省莆田市荔城区",
+        "state": "草稿",
+        "height": "8km",
+        "briefOne": "无人员伤亡",
+        "briefTwo": "无建筑物破坏",
+        "describe1":0,
+        "describe2":0,
+        "detailed":"详细描述建筑物没破坏",
+        "imgsList": [
+            {
+                "content":"/appimgs/img.png",
+                "url":"/appimgs/img.png"
+            },
+            {
+                "content":"https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg",
+                "url":"https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg"
+            }
+        ],
+        "videoList": [{
+            "img":"https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg",
+            "videoSrc":""
+        },{
+          "img":"/appimgs/img.png",
+          "videoSrc":""
+          }]
+      },{
+        "id":"3",
+        "img":"/appimgs/img.png",
+        "earthquakeIntensity":"Ⅳ",
+        "addr":"上报地址闽侯县久策大厦",
+        "time":"2020.02.18 16:26",
+        "seismic": "地震标识福建省莆田市荔城区",
+        "state": "草稿",
+        "height": "8km",
+        "briefOne": "无人员伤亡",
+        "briefTwo": "无建筑物破坏",
+        "describe1":0,
+        "describe2":0,
+        "detailed":"详细描述",
+        "imgsList": [
+            {
+                "content":"/appimgs/img.png",
+                "url":"/appimgs/img.png"
+            },
+            {
+                "content":"https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg",
+                "url":"https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg"
+            }
+        ],
+        "videoList": [{
+            "img":"https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg",
+            "videoSrc":""
+        },{
+          "img":"/appimgs/img.png",
+          "videoSrc":""
+          }]
+      },{
+        "id":"4",
+        "img":"/appimgs/img.png",
+        "earthquakeIntensity":"Ⅳ",
+        "addr":"上报地址闽侯县久策大厦",
+        "time":"2020.02.18 16:26",
+        "seismic": "地震标识福建省莆田市荔城区",
+        "state": "已发布",
+        "height": "8km",
+        "briefOne": "无人员伤亡",
+        "briefTwo": "无建筑物破坏",
+        "describe1":0,
+        "describe2":0,
+        "detailed":"详细描述",
+        "imgsList": [ 
+            {
+                "content":"https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg",
+                "url":"https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg"
+            }
+        ],
+        "videoList": [{
+            "img":"https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg",
+            "videoSrc":""
+        },{
+          "img":"https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg",
+          "videoSrc":""
+          }]
+      }]
+  }
+  

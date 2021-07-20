@@ -1,0 +1,93 @@
+{
+  "usable": "api",
+  "deptManage": {
+    "desc": "部门管理",
+    "debug": "http://122.51.146.178:31349/api/dept/list",
+    "release": "http://dev.3dspace.top:52341/api/dept/list"
+  },
+  "ealist":{
+    "desc": "地震列表",
+    "debug": "http://122.51.146.178:31349/api/quakes/list",
+    "release": "http://dev.3dspace.top:52341/api/quakes/list"
+  },
+  "allDeptList":{
+    "desc": "部门下拉列表",
+    "debug": "http://122.51.146.178:31349/api/dept/listAll?isDel=0",
+    "release": "http://dev.3dspace.top:52341/api/dept/listAll?isDel=0"
+  },
+  "user":{
+    "desc": "联系人列表",
+    "debug": "http://122.51.146.178:31349/api/user/list?isDel=0",
+    "release": "http://dev.3dspace.top:52341/api/user/list?isDel=0"
+  },
+  "login":{
+    "desc":"登录验证",
+    "debug": "http://122.51.146.178:31349/api/login/login",
+    "release": "http://dev.3dspace.top:52341/api/login/login"
+  },
+  "loginout":{
+    "desc":"退出",
+    "debug": "http://122.51.146.178:31349/api/login/logout",
+    "release":"http://dev.3dspace.top:52341/api/login/logout"
+  },
+  "editUser":{
+    "desc": "编辑人员",
+    "debug": "http://dev.3dspace.top:52341/api/user/edit",
+    "release": "http://dev.3dspace.top:52341/api/user/edit"
+  },
+  "editPassword":{
+    "desc": "修改密码",
+    "debug": "http://122.51.146.178:31349/api/user/updatePassword",
+    "release": "http://dev.3dspace.top:52341/api/user/updatePassword"
+  },
+  "collentionList":{
+    "desc": "采集列表",
+    "debug": "http://122.51.146.178:31349/api/quakesCollect/list",
+    "release": "http://dev.3dspace.top:52341/api/quakesCollect/list"
+  },
+  "collentionAdd":{
+    "desc": "新增采集",
+    "debug": "http://122.51.146.178:31349/api/quakesCollect/add",
+    "release": "http://dev.3dspace.top:52341/api/quakesCollect/add"
+  },
+  "collentionEdit":{
+    "desc": "编辑采集",
+    "debug": "http://122.51.146.178:31349/api/quakesCollect/edit",
+    "release": "http://dev.3dspace.top:52341/api/quakesCollect/edit"
+  },
+  "aidDecisionList":{
+    "desc": "辅助决策-防震手册",
+    "debug": "http://www.dizhen.ac.cn/?c=index&a=index&do=ArticleList",
+    "release": "http://www.dizhen.ac.cn/?c=index&a=index&do=ArticleList"
+  },
+  "aidDecisionDetail":{
+    "desc": "辅助决策详情-防震手册",
+    "debug": "http://www.dizhen.ac.cn/?c=index&a=index&do=ArticleDetails",
+    "release": "http://www.dizhen.ac.cn/?c=index&a=index&do=ArticleDetails"
+  },
+  "version":{
+    "desc": "",
+    "debug": "http://122.51.146.178:31349/api/version/listAll",
+    "release": "http://dev.3dspace.top:52341/api/version/listAll"
+  },
+  "delAccessory": {
+    "desc": "删除附件",
+    "debug": "http://122.51.146.178:31349/api/quakesCollectAccessory/del",
+    "release": "http://dev.3dspace.top:52341/api/quakesCollectAccessory/del"
+  },
+  "accessoryList": {
+    "desc": "附件列表",
+    "debug": "http://122.51.146.178:31349/api/quakesAtt/listAtt",
+    "release": "http://dev.3dspace.top:52341/api/quakesAtt/listAtt"
+  },
+  "chats":{
+    "desc":"聊天",
+    "debug":"http://122.51.146.178:31349/api/chats/add",
+    "release":"http://dev.3dspace.top:52341/api/chats/add"
+  },
+  "chatslist":{
+    "desc":"聊天",
+    "debug":"http://122.51.146.178:31349/api/chats/listAll",
+    "release":"http://dev.3dspace.top:52341/api/chats/listAll"
+  }
+}
